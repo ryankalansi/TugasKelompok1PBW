@@ -49,7 +49,7 @@ session_start();
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">Tentang Kami nii</a>
+                <a class="nav-link" href="#about">Tentang Kami</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#program">Program</a>
