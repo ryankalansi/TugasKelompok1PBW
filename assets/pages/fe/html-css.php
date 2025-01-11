@@ -56,6 +56,11 @@
             </pre>
             <p>Dengan menambahkan CSS di dalam tag <code>&lt;style&gt;</code>, kamu dapat merubah tampilan HTML yang ada di halaman tersebut.</p>
         </section>
+
+        <!-- Tombol Selesai -->
+        <div style="text-align: center; margin-top: 40px;">
+            <button onclick="alert('Terima kasih telah membaca materi!')">Selesai</button>
+        </div>
     </main>
 
     <footer>

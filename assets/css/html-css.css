@@ -47,6 +47,10 @@ main {
 
 section {
     margin-bottom: 40px;
+    padding: 20px; /* Tambahkan padding untuk ruang di dalam border */
+    border: 2px solid #ccc; /* Tambahkan border untuk setiap section */
+    border-radius: 8px; /* Membulatkan sudut border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
 }
 
 section h2 {
@@ -85,11 +89,32 @@ footer {
 
 section#html img {
     width: 100%;
-    max-width: 600px; 
-    height: auto; 
-    display: block; 
-    margin: 20px auto; 
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
     border: 2px solid #ccc;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS untuk Tombol Selesai */
+button {
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    padding: 10px 20px; /* Padding tombol */
+    text-align: center; /* Penataan teks */
+    text-decoration: none; /* Menghilangkan dekorasi teks */
+    display: inline-block; /* Membuat tombol inline */
+    font-size: 16px; /* Ukuran font */
+    margin: 4px 2px; /* Margin tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    border-radius: 12px; /* Membulatkan sudut tombol */
+    transition: background-color 0.3s, transform 0.3s; /* Animasi transisi */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Membesarkan tombol saat hover */
 }

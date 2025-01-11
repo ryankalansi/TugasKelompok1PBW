@@ -3,24 +3,28 @@
 $tutorials = [
     [
         'judul' => 'Bagaimana Server Bekerja',
-        'konten' => 'Server adalah komputer atau sistem yang menyediakan layanan untuk klien. Ketika klien mengirim permintaan (request), server akan memprosesnya dan memberikan tanggapan (response).',
-        'gambar' => 'assets/img/server_diagram.jpg',
+        'konten' => '<p>Server adalah komputer atau sistem yang menyediakan layanan untuk klien. Ketika klien mengirim permintaan (request), server akan memprosesnya dan memberikan tanggapan (response). Berikut adalah cara kerja server secara umum:</p>
+<ol>
+    <li>Menerima Permintaan</li>
+    <li>Memproses Permintaan</li>
+    <li>Mengirimkan Tanggapan</li>
+    <li>Menjaga Koneksi</li>
+</ol>',
+        'gambar' => '../../img/server.jpg',
     ],
     [
         'judul' => 'Dasar-Dasar Server-Side Scripting',
-        'konten' => 'Server-side scripting memungkinkan pembuatan aplikasi web dinamis. Contoh bahasa pemrograman server-side: PHP, Node.js, Python, Ruby.',
-        'gambar' => null,
+        'konten' => '<p>Server-side scripting memungkinkan pembuatan aplikasi web dinamis. Contoh bahasa pemrograman server-side: PHP, Node.js, Python, Ruby.</p>',
     ],
     [
         'judul' => 'Membangun Server dengan Node.js',
-        'konten' => 'Node.js adalah runtime JavaScript yang memungkinkan kita menjalankan JavaScript di sisi server. Berikut adalah contoh server sederhana menggunakan Node.js:',
+        'konten' => '<p>Node.js adalah runtime JavaScript yang memungkinkan kita menjalankan JavaScript di sisi server. Berikut adalah contoh server sederhana menggunakan Node.js:</p>',
         'kode' => 'const http = require(\'http\'); 
 const server = http.createServer((req, res) => {
     res.writeHead(200, { \'Content-Type\': \'text/plain\' });
     res.end(\'Hello, World!\');
 });
 server.listen(3000, () => console.log(\'Server berjalan di http://localhost:3000\'));',
-        'gambar' => null,
     ],
 ];
 ?>
@@ -50,15 +54,20 @@ server.listen(3000, () => console.log(\'Server berjalan di http://localhost:3000
         <?php foreach ($tutorials as $tutorial): ?>
             <section>
                 <h2><?php echo $tutorial['judul']; ?></h2>
-                <p><?php echo $tutorial['konten']; ?></p>
+                <div><?php echo $tutorial['konten']; ?></div>
                 <?php if (!empty($tutorial['gambar'])): ?>
-                    <img src="<?php echo $tutorial['gambar']; ?>" alt="Gambar terkait <?php echo $tutorial['judul']; ?>">
+                    <img src="<?php echo $tutorial['gambar']; ?>" alt="<?php echo $tutorial['judul']; ?>">
                 <?php endif; ?>
                 <?php if (!empty($tutorial['kode'])): ?>
                     <pre><?php echo htmlspecialchars($tutorial['kode']); ?></pre>
                 <?php endif; ?>
             </section>
         <?php endforeach; ?>
+
+        <!-- Tombol Selesai -->
+        <div class="button-container">
+            <button onclick="alert('Terima kasih telah membaca materi!')">Selesai</button>
+        </div>
     </main>
 
     <footer>

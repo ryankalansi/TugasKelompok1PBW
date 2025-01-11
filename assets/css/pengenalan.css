@@ -1,17 +1,17 @@
-/* Reset dasar */
+/* CSS untuk Pengenalan HTML & CSS */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Header dan navigasi */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -22,55 +22,104 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Konten utama */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
 }
 
 section {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 20px; /* Tambahkan padding untuk ruang di dalam border */
+    border: 2px solid #ccc; /* Tambahkan border untuk setiap section */
+    border-radius: 8px; /* Membulatkan sudut border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+section h2 {
+    color: #4CAF50;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
 }
 
 img {
     max-width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 pre {
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     padding: 10px;
-    border-radius: 5px;
+    border: 1px solid #ddd;
     overflow-x: auto;
-    font-family: Consolas, monospace;
 }
 
-/* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+section#html img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS untuk Tombol Selesai */
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    padding: 10px 20px; /* Padding tombol */
+    text-align: center; /* Penataan teks */
+    text-decoration: none; /* Menghilangkan dekorasi teks */
+    display: inline-block; /* Membuat tombol inline */
+    font-size: 16px; /* Ukuran font */
+    margin: 4px 2px; /* Margin tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    border-radius: 12px; /* Membulatkan sudut tombol */
+    transition: background-color 0.3s, transform 0.3s; /* Animasi transisi */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Membesarkan tombol saat hover */
 }
